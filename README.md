@@ -45,7 +45,7 @@ For large sites with hundreds or thousands of pages, this manual process is time
 ```python
 import pandas as pd
 
-df = pd.read_csv("gsc_pages_report.csv")
+df = pd.read_csv("gsc_pages_mock_law_attorneys.csv")
 
 def assign_action(row):
     if row["impressions"] > 10000 and row["ctr"] < 0.01 and row["position"] <= 10:
@@ -137,3 +137,4 @@ The CSV should have these columns:
 | 100 pages   | ~20 min     | 5 sec          | 99.6%   |
 | 500 pages   | ~25 min     | 5 sec          | 99.7%   |
 | 1000+ pages | ~35 min     | 5 sec          | 99.8%   |
+
